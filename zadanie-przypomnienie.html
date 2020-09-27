@@ -4,11 +4,32 @@
         <meta charset="UTF-8">
         <meta lang="pl">
         <title>Ciąg fibbonacciego</title>
+        <style>
+            body{
+                background-image: url(ciagfibonacciego2.png);
+                background-repeat: no-repeat;
+                background-size:70%;
+            }
+            #pole{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(255, 255, 255, 0.5);
+                border-color: black;
+                border-width: 3px;
+                border-style: solid;
+                padding: 20px;
+                border-radius: 3px;
+            }
+        </style>
     </head>
     <body>
-        <input type="number" id="numer">
-        <input type="button" id="przycisk">
+        <div id="pole">
+        <input type="number" placeholder="Liczba" id="numer">
+        <input type="button" value="Oblicz" id="przycisk">
         <p id="wynik"></p>
+        </div>
         <script src="skrypt.js"></script>
     </body>
 </html>
