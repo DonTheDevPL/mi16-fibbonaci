@@ -1,3 +1,5 @@
+document.getElementById('przycisk').addEventListener('click',znajdzFibb())
+
 function znajdzFibb(){
     let numer = document.getElementById('numer').value; 
     let wynik = fibbonacci(numer);
